@@ -12,9 +12,9 @@ Retireator is a free retirement simulator, written in Microsoft Excel, with a fo
 
 5) Start Developer Command Prompt for VS2013 (or equivalent with nmake capability)
 
-6) Run nmake in the Excel_2010 directory to compress the xlsx_dbg folder down to the xlsx file
+6) Run "nmake /A pull" in the Excel_2010 directory to compress the xlsx_dbg folder down to the xlsx file which can then be opened by Excel.
 
-The xlsx file format is really just a zip, so the contents of the xlsx_dbg folder can be manually added to a zip and renamed to xlsx if desired.  The xlsx should be extracted back to the xlsx_dbg folder to commit changes back to the repo.
+The xlsx file format is really just a zip, so the contents of the xlsx_dbg folder can be manually added to a zip and renamed to xlsx if desired.  The xlsx should be extracted back to the xlsx_dbg folder to commit changes back to the repo.  This can be done by the command "nmake /A push".  Exercise caution with nmake pull and push as they can overwrite local changes.
 
 The latest xlsx file can also be downloaded from the Releases area (presently Debug only).
 
