@@ -1,7 +1,14 @@
 # Retireator
 Retireator is a free retirement simulator, written in Microsoft Excel, with a focus on short and medium term financial planning.  Retireator was created by Larry Blumer, Jr.  The Microsoft Excel platform allows for the tool to be open and infinitely adaptable by both developers and non-developers alike.
 
-# Quick start
+# Quick start for contributors
+Contributors are welcome!  The basic tenets of the project are as follows:
+
+* The Retireator base model is built using only Excel formulas.  I may add macros/VBA in the future to add optional features, but the base model should never have any dependendies on VBA.  
+* No DLL's or other extensions should be added to the project as well.  
+
+Moving on to the prerequisites and development environment, this is pretty basic:
+
 1. Microsoft Excel 2010 is required (presently developed using 14.0.7145.5000 32-bit)
 2. Clone the repo: git clone <https://github.com/llblumer/Retireator>
 3. The 7zip command line tools should be installed and added to path (optional)
@@ -14,9 +21,9 @@ The xlsx file format is really just a zip, so the contents of the xlsx_dbg folde
 The latest xlsx file can also be downloaded from the Releases area (presently Debug only).
 
 # Copyright and license
-Copyright© 2015 Larry Blumer, Jr.  
+Copyright © 2015 Larry Blumer, Jr.  
 <mailto:larry.blumer@retireator.org>  
-<www.retireator.org>  
+<http://www.retireator.org>  
 
 Retireator is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
