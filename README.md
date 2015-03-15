@@ -18,7 +18,9 @@ The xlsx file format is really just a zip, so the contents of the xlsx_dbg folde
 
 # Copyright and license
 Copyright© 2015 Larry Blumer, Jr.
+
 mailto:larry.blumer@retireator.org
+
 www.retireator.org
 
 Retireator is free software: you can redistribute it and/or modify
