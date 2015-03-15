@@ -2,10 +2,16 @@ PROJECT=Retireator
 VERSION=2015_0315
 SUFFIX=dbg
 EXT=xlsx
-TARGET=$(PROJECT)_$(VERSION)_$(SUFFIX).$(EXT)
+PULLTARGET=$(PROJECT)_$(VERSION)_$(SUFFIX).$(EXT)
+PUSHTARGET=$(EXT)_$(SUFFIX)
 
-all: $(TARGET)
+pull: $(PULLTARGET)
 
-$(TARGET):
-	7za a  $@ .\$(EXT)_$(SUFFIX)\*
+push: $(PUSHTARGET)
+
+$(PULLTARGET): 
+	7za a  $@ .\$(PUSHTARGET)\*
+
+$(PUSHTARGET): 
+	7za x $(PULLTARGET) -o.\$@\ -y
 
