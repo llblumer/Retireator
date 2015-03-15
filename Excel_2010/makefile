@@ -1,0 +1,11 @@
+PROJECT=Retireator
+VERSION=2015_0315
+SUFFIX=dbg
+EXT=xlsx
+TARGET=$(PROJECT)_$(VERSION)_$(SUFFIX).$(EXT)
+
+all: $(TARGET)
+
+$(TARGET):
+	7za a  $@ .\$(EXT)_$(SUFFIX)\*
+
