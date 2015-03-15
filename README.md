@@ -16,6 +16,8 @@ Retireator is a free retirement simulator, written in Microsoft Excel, with a fo
 
 The xlsx file format is really just a zip, so the contents of the xlsx_dbg folder can be manually added to a zip and renamed to xlsx if desired.  The xlsx should be extracted back to the xlsx_dbg folder to commit changes back to the repo.
 
+The latest xlsx file can also be downloaded from the Releases area (presently Debug only).
+
 # Copyright and license
 Copyright© 2015 Larry Blumer, Jr.
 
