@@ -10,8 +10,8 @@ pull: $(PULLTARGET)
 push: $(PUSHTARGET)
 
 $(PULLTARGET): 
-	7za a  $@ .\$(PUSHTARGET)\*
+	7za a -tzip $@ .\$(PUSHTARGET)\*
 
 $(PUSHTARGET): 
-	7za x $(PULLTARGET) -o.\$@\ -y
+	7za x -tzip $(PULLTARGET) -o.\$@\ -y
 
