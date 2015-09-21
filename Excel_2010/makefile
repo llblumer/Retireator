@@ -13,5 +13,6 @@ $(PULLTARGET):
 	7za a -tzip $@ .\$(PUSHTARGET)\*
 
 $(PUSHTARGET): 
+	-rmdir /S /Q $@
 	7za x -tzip $(PULLTARGET) -o.\$@\ -y
 
