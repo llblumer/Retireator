@@ -10,6 +10,7 @@ pull: $(PULLTARGET)
 push: $(PUSHTARGET)
 
 $(PULLTARGET): 
+	-del $@
 	7za a -tzip $@ .\$(PUSHTARGET)\*
 
 $(PUSHTARGET): 
