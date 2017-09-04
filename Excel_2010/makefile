@@ -10,9 +10,9 @@ push: $(PUSHTARGET)
 
 $(PULLTARGET): 
 	-del $@
-	7za a -tzip $@ .\$(PUSHTARGET)\*
+	7z a -tzip $@ .\$(PUSHTARGET)\*
 
 $(PUSHTARGET): 
 	-rmdir /S /Q $@
-	7za x -tzip $(PULLTARGET) -o.\$@\ -y
+	7z x -tzip $(PULLTARGET) -o.\$@\ -y
 
