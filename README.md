@@ -2,7 +2,7 @@
 Retireator is a free, open-source retirement simulator, written in Microsoft Excel, with a focus on short and medium term financial planning. The Microsoft Excel platform allows for the tool to be open and infinitely adaptable by both developers and non-developers alike, which is a huge advantage over closed-source software. "Retireatees" can build and test a retirement drawdown strategy incorporating a myriad of different retirement income sources over a period of years with meticulous calculations and extrapolations of Social Security benefits, federal and state income taxes, mortgages, and market conditions. Retireator was created by Larry Blumer, Jr.  
 
 # Copyright and license
-Copyright © 2015-2023 Larry Blumer, Jr.  
+Copyright © 2015-2024 Larry Blumer, Jr.  
 <mailto:larry.blumer@retireator.org>  
 <http://www.retireator.org>  
 
