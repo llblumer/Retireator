@@ -9,12 +9,12 @@ pull: $(PULLTARGET)
 push: $(PUSHTARGET)
 
 $(PULLTARGET): force
-	-del '$@'
-	7z a -tzip '$@' '.\$(PUSHTARGET)\*'
+	-del "$@"
+	7z a -tzip "$@" ".\$(PUSHTARGET)\*"
 
 $(PUSHTARGET): force
-	-rmdir /S /Q '$@'
-	7z x -tzip '$(PULLTARGET)' -o'.\$@\' -y
+	-rmdir /S /Q "$@"
+	7z x -tzip "$(PULLTARGET)" -o".\$@\" -y
 
 force:
 
