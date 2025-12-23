@@ -1,20 +1,14 @@
-PROJECT=Retireator
-SUFFIX=
-EXT=xlsm
-PULLTARGET=$(PROJECT)$(SUFFIX).$(EXT)
-PUSHTARGET=$(EXT)_repo
+.PHONY: compress extract
 
-pull: $(PULLTARGET)
+XLSM_PATH=Retireator.xlsm
+REPO_PATH=xlsm_repo
 
-push: $(PUSHTARGET)
+compress: 
+	-del "$(XLSM_PATH)"
+	7z a -tzip "$(XLSM_PATH)" ".\$(REPO_PATH)\*"
 
-$(PULLTARGET): force
-	-del "$@"
-	7z a -tzip "$@" ".\$(PUSHTARGET)\*"
+extract:
+	-rmdir /S /Q "$(REPO_PATH)"
+	7z x -tzip "$(XLSM_PATH)" -o".\$(REPO_PATH)\" -y
 
-$(PUSHTARGET): force
-	-rmdir /S /Q "$@"
-	7z x -tzip "$(PULLTARGET)" -o".\$@\" -y
-
-force:
 
