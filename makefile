@@ -5,8 +5,9 @@ REPO_PATH=Excel_2016/xlsm_repo
 
 compress:
 	rm -f "$(XLSM_PATH)"
-	7z a -tzip "$(XLSM_PATH)" ".\\$(REPO_PATH)\\*"
+	(cd "$(REPO_PATH)" && zip -r "../$(notdir $(XLSM_PATH))" .)
 
 extract:
 	rm -rf "$(REPO_PATH)"
-	7z x -tzip "$(XLSM_PATH)" -o".\\$(REPO_PATH)\\" -y
+	mkdir -p "$(REPO_PATH)"
+	unzip -q -o "$(XLSM_PATH)" -d "$(REPO_PATH)"
