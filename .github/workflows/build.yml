@@ -1,0 +1,27 @@
+name: Build workbook
+
+on:
+  push:
+    tags:
+      - '**'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build workbook
+        run: make compress
+
+      - name: Upload workbook artifact
+        uses: actions/upload-artifact@v7
+        with:
+          path: Excel_2016/Retireator.xlsm
+          archive: false
+          if-no-files-found: error
