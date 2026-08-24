@@ -8,9 +8,9 @@ Moving on to the prerequisites and development environment, this is pretty basic
 
 1. Clone the repo: git clone <https://github.com/llblumer/Retireator>
 2. The 7-Zip command line tools and GNU make should be installed and added to the path
-5. Run "make compress" in the Excel_2016 directory to compress the xlsm_repo folder down to the xlsm file which can then be opened by Excel.
+5. Run "make compress" in the project root to compress the Excel_2016/xlsm_repo folder down to the xlsm file which can then be opened by Excel.
 
-The xlsm file format is really just a zip in the Office Open XML format.  Run "make extract" to extract changes back to the xlsm_repo folder to allow committing to the repo.
+The xlsm file format is really just a zip in the Office Open XML format.  Run "make extract" from the project root to extract changes back to the Excel_2016/xlsm_repo folder to allow committing to the repo.
 
 # Contributor License Agreement
 By contributing your code to Retireator you grant Larry Blumer, Jr. a non-exclusive, irrevocable, worldwide, royalty-free, sublicenseable, transferable license under all of Your relevant intellectual property rights (including copyright, patent, and any other rights), to use, copy, prepare derivative works of, distribute and publicly perform and display the Contributions on any licensing terms, including without limitation: (a) open source licenses like the MIT license; and (b) binary, proprietary, or commercial licenses. Except for the licenses granted herein, You reserve all right, title, and interest in and to the Contribution.
